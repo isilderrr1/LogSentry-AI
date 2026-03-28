@@ -1,9 +1,0 @@
-{
-    "timestamp": "2026-03-28T10:14:28.918656",
-    "total_logs": 100,
-    "total_execution_time_s": 78.4536,
-    "regex_throughput_logs_per_s": 59701.49,
-    "ai_filtering_efficiency_pct": 97.0,
-    "average_ai_latency_s": 26.1486,
-    "ai_requests_made": 3
-}

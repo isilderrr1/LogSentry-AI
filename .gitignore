@@ -10,3 +10,14 @@ __pycache__/
 audit_report_*.csv
 targets.log
 dummy_logs.csv
+# Python Distribution / Scarti di installazione
+*.egg-info/
+build/
+dist/
+
+# Benchmark e Telemetria (evitiamo di caricare i tuoi test locali)
+benchmark_stats.json
+test_dataset.log
+
+# OS Metadata
+Thumbs.db
