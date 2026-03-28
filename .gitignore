@@ -1,0 +1,12 @@
+# Python
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+.DS_Store
+
+# LogSentry Custom
+audit_report_*.csv
+targets.log
+dummy_logs.csv
