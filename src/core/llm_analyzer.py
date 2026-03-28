@@ -1,9 +1,24 @@
+import os
 import openai
+from dotenv import load_dotenv
+from rich.console import Console
+
+load_dotenv()
+console = Console()
 
 class LocalLLMAnalyzer:
-    def __init__(self, base_url="http://10.5.0.2:1234/v1", model="deepseek-r1-distill-qwen-14b", api_key="lm-studio"):
-        self.client = openai.OpenAI(base_url=base_url, api_key=api_key)
-        self.model = model
+    def __init__(self, base_url=None, model=None, api_key="lm-studio"):
+        self.base_url = os.getenv("LM_STUDIO_URL", base_url or "http://localhost:1234/v1")
+        self.model = os.getenv("LM_STUDIO_MODEL", model or "deepseek-r1-distill-qwen-14b")
+        self.client = openai.OpenAI(base_url=self.base_url, api_key=api_key)
+        
+        self.check_connection()
+
+    def check_connection(self):
+        try:
+            self.client.models.list()
+        except Exception as e:
+            console.print(f"[bold yellow]WARNING: Could not connect to AI server at {self.base_url}. Model-generated security verdicts will be disabled or will fail. ({e})[/bold yellow]")
 
     def _clean_verdict(self, full_text: str) -> str:
         """
