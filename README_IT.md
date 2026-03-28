@@ -25,11 +25,8 @@ Read this in: [English](README.md) | [Italiano](README_IT.md)
 - **Reportistica con Timestamp**: Genera automaticamente file `audit_report_YYYYMMDD_HHMMSS.csv` sicuri e cronologicamente tracciati, contenenti i verdetti puliti e le istruzioni di risposta agli incidenti forniti dall'IA.
 
 ## 📸 Screenshot
-*(Segnaposto per le immagini della TUI)*
-<!--
-![Menu Principale](path/to/menu_screenshot.png)
-![Risultati Analisi](path/to/results_screenshot.png)
--->
+![Menu Principale](menu_screenshot.png)
+![Risultati Analisi](results_screenshot.png)
 
 ## 📋 Prerequisiti
 - **Python 3.10+**

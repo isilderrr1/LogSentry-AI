@@ -25,11 +25,8 @@ Read this in: [English](README.md) | [Italiano](README_IT.md)
 - **Timestamped Reporting**: Automatically generates secure, time-stamped `audit_report_YYYYMMDD_HHMMSS.csv` files containing clean, actionable LLM incident response verdicts.
 
 ## 📸 Screenshots
-*(Placeholder for TUI images)*
-<!--
-![Main Menu](path/to/menu_screenshot.png)
-![Analysis Results](path/to/results_screenshot.png)
--->
+![Main Menu](menu_screenshot.png)
+![Analysis Results](results_screenshot.png)
 
 ## 📋 Prerequisites
 - **Python 3.10+**
